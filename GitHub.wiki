@@ -1,0 +1,20 @@
+=Use git in GitHub=
+==install git==
+$ apt-get install git git-core git-gtk
+
+==Get SSH-key==
+$ ssh-keygen -t rsa -C 'username@domain.com'
+get the ssh-key,add it to SSH Public Keys in Account Settings 
+
+==Init & set git ==
+$ git init
+
+$ git config --global user.name "name"
+$ git config --global user.email emailadress
+
+==Add file contents to the index==
+$ git add .
+$ git commit
+$ git remote add origin git@github.com:name/project.git
+$ git push origin master
+
