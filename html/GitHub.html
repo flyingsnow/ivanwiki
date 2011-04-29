@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css" />
+<title>GitHub</title>
+<meta http-equiv="Content-Type" content="text/html; charset=" />
+</head>
+<body>
+<h1 id="toc_1">Use git in <a href="GitHub.html">GitHub</a></h1>
+<h2 id="toc_1.1">install git</h2>
+<p>
+$ apt-get install git git-core git-gtk
+</p>
+
+<h2 id="toc_1.2">Get SSH-key</h2>
+<p>
+$ ssh-keygen -t rsa -C 'username@domain.com'
+get the ssh-key,add it to SSH Public Keys in Account Settings 
+</p>
+
+<h2 id="toc_1.3">Init &amp; set git</h2>
+<p>
+$ git init
+</p>
+
+<p>
+$ git config --global user.name "name"
+$ git config --global user.email emailadress
+</p>
+
+<h2 id="toc_1.4">Add file contents to the index</h2>
+<p>
+$ git add .
+$ git commit
+$ git remote add origin git@github.com:name/project.git
+$ git push origin master
+</p>
+
+</body>
+</html>
